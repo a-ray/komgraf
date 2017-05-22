@@ -39,9 +39,6 @@ public class Clip extends JPanel {
     }
     
     
-    
-    
-    
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         this.setBackground(Color.white);
@@ -70,9 +67,11 @@ public class Clip extends JPanel {
         gr.drawLine(w / 2, 0, w / 2, h);
         gr.setStroke(new BasicStroke(2));
         AffineTransform af = new AffineTransform();
+        
     switch (id) {
             //----- clipping -----
-            case 20:
+            case 1://clipping point
+                
                 if (cs == 1) {
                     Point(gr, poX[0], poY[0], poX[1], poY[1]);
                     drawClip(gr);
@@ -85,7 +84,8 @@ public class Clip extends JPanel {
                     Point(gr, poX[0], poY[0], poX[1], poY[1]);
                 }
                 break;
-            case 21:
+                
+            case 2: //clipping line
                 if (cs == 1) {
                     Line(gr, liX[0], liY[0], liX[1], liY[1]);
                     Line(gr, liX[2], liY[2], liX[3], liY[3]);
@@ -104,7 +104,8 @@ public class Clip extends JPanel {
                     Line(gr, liX[4], liY[4], liX[5], liY[5]);
                 }
                 break;
-            case 22:
+                
+            case 3: //clipping rectangle
                 if (cs == 1) {
                     rectFill(gr, reX[0], reY[0], reX[1], reY[1]);
                     rectFill(gr, reX[2], reY[2], reX[3], reY[3]);
@@ -123,13 +124,15 @@ public class Clip extends JPanel {
                     rectFill(gr, reX[4], reY[4], reX[5], reY[5]);
                 }
                 break;
-            case 23:
+                
+            case 4: //clipping segitiga
                 int x1[] = Arrays.copyOfRange(triX, 0, 3);
                 int y1[] = Arrays.copyOfRange(triY, 0, 3);
                 int x2[] = Arrays.copyOfRange(triX, 3, 6);
                 int y2[] = Arrays.copyOfRange(triY, 3, 6);
                 int x3[] = Arrays.copyOfRange(triX, 6, 9);
                 int y3[] = Arrays.copyOfRange(triY, 6, 9);
+                
                 if (cs == 1) {
                     triFill(gr, x1, y1, x1.length);
                     triFill(gr, x2, y2, x2.length);

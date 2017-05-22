@@ -144,7 +144,6 @@ public class Clipping extends javax.swing.JFrame {
         ymax = new javax.swing.JTextField();
         addClip = new javax.swing.JButton();
         clip = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 700));
@@ -872,48 +871,41 @@ public class Clipping extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton1.setText("Menu");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(clear)
-                .addGap(18, 18, 18)
-                .addComponent(back)
-                .addGap(31, 31, 31))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(253, 253, 253)
                 .addComponent(jLabel38)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 762, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jSeparator1)
+                        .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(clear)
+                                .addGap(18, 18, 18)
+                                .addComponent(back))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(24, 24, 24)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel38)
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -922,20 +914,18 @@ public class Clipping extends javax.swing.JFrame {
                         .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addGap(2, 2, 2)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(clear)
-                    .addComponent(back))
-                .addContainerGap(57, Short.MAX_VALUE))
+                    .addComponent(back)
+                    .addComponent(clear))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 801, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 801, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1045,6 +1035,58 @@ public class Clipping extends javax.swing.JFrame {
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
         // TODO add your handling code here:
+        jScrollPane1.setViewportView(new Koordinat());
+        pointX1.setText("");
+        pointY1.setText("");
+        pointX2.setText("");
+        pointY2.setText("");
+        xmin.setText("");
+        xmax.setText("");
+        ymin.setText("");
+        ymax.setText("");
+        xa1.setText("");
+        ya1.setText("");
+        xb1.setText("");
+        yb2.setText("");
+        xa2.setText("");
+        ya2.setText("");
+        xb2.setText("");
+        yb2.setText("");
+        xa3.setText("");
+        ya3.setText("");
+        xb3.setText("");
+        yb3.setText("");
+        x1_rect.setText("");
+        y1_rect.setText("");
+        width1.setText("");//w1
+        height1.setText("");//h1
+        x2_rect.setText("");
+        y2_rect.setText("");
+        width2.setText("");//w2
+        height2.setText("");//h2
+        x3_rect.setText("");
+        y3_rect.setText("");
+        width3.setText("");
+        height3.setText("");
+        xt_a1.setText("");
+        xt_b1.setText("");
+        xt_c1.setText("");
+        yt_a1.setText("");
+        yt_b1.setText("");
+        yt_c1.setText("");
+        xt_a2.setText("");
+        xt_b2.setText("");
+        xt_c2.setText("");
+        yt_a2.setText("");
+        yt_b2.setText("");
+        yt_c2.setText("");
+        xt_a3.setText("");
+        xt_b3.setText("");
+        xt_c3.setText("");
+        yt_a3.setText("");
+        yt_b3.setText("");
+        yt_c3.setText("");
+        
         
     }//GEN-LAST:event_clearActionPerformed
 
@@ -1078,7 +1120,7 @@ public class Clipping extends javax.swing.JFrame {
                 y2 = Integer.parseInt(pointY2.getText());
                 int x[] = {x1, x2};
                 int y[] = {y1, y2};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 20, 1));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 1, 1));
             } catch (Exception e) {
             }
         }
@@ -1098,7 +1140,7 @@ public class Clipping extends javax.swing.JFrame {
                 y6 = Integer.parseInt(yb3.getText());
                 int x[] = {x1, x2, x3, x4, x5, x6};
                 int y[] = {y1, y2, y3, y4, y5, y6};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 21, 1));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 2, 1));
             } catch (Exception e) {
             }
         }
@@ -1114,11 +1156,11 @@ public class Clipping extends javax.swing.JFrame {
                 y4 = Integer.parseInt(height2.getText());//h2
                 x5 = Integer.parseInt(x3_rect.getText());
                 y5 = Integer.parseInt(y3_rect.getText());
-                x6 = Integer.parseInt(width3.getText());//w3
-                y6 = Integer.parseInt(height3.getText());//h3
+                x6 = Integer.parseInt(width3.getText());
+                y6 = Integer.parseInt(height3.getText());
                 int x[] = {x1, x2, x3, x4, x5, x6};
                 int y[] = {y1, y2, y3, y4, y5, y6};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 22, 1));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 3, 1));
             } catch (Exception e) {
             }
         }
@@ -1146,7 +1188,7 @@ public class Clipping extends javax.swing.JFrame {
                     x6 * grid + wSize, x7 * grid + wSize, x8 * grid + wSize, x9 * grid + wSize};
                 int y[] = {wSize - grid * y1, wSize - grid * y2, wSize - grid * y3, wSize - grid * y4, wSize - grid * y5,
                     wSize - grid * y6, wSize - grid * y7, wSize - grid * y8, wSize - grid * y9};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 23, 1));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 4, 1));
             } catch (Exception e) {
             }
         }
@@ -1169,7 +1211,7 @@ public class Clipping extends javax.swing.JFrame {
                 y2 = Integer.parseInt(pointY2.getText());
                 int x[] = {x1, x2};
                 int y[] = {y1, y2};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 20, 2));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 1, 2));
             } catch (Exception e) {
             }
         }
@@ -1189,7 +1231,7 @@ public class Clipping extends javax.swing.JFrame {
                 y6 = Integer.parseInt(yb3.getText());
                 int x[] = {x1, x2, x3, x4, x5, x6};
                 int y[] = {y1, y2, y3, y4, y5, y6};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 21, 2));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 2, 2));
             } catch (Exception e) {
             }
         }
@@ -1209,7 +1251,7 @@ public class Clipping extends javax.swing.JFrame {
                 y6 = Integer.parseInt(height3.getText());//h3
                 int x[] = {x1, x2, x3, x4, x5, x6};
                 int y[] = {y1, y2, y3, y4, y5, y6};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 22, 2));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 3, 2));
             } catch (Exception e) {
             }
         }
@@ -1237,7 +1279,7 @@ public class Clipping extends javax.swing.JFrame {
                     x6 * grid + wSize, x7 * grid + wSize, x8 * grid + wSize, x9 * grid + wSize};
                 int y[] = {wSize - grid * y1, wSize - grid * y2, wSize - grid * y3, wSize - grid * y4, wSize - grid * y5,
                     wSize - grid * y6, wSize - grid * y7, wSize - grid * y8, wSize - grid * y9};
-                jScrollPane1.setViewportView(new Clip(x, y, c, 23, 2));
+                jScrollPane1.setViewportView(new Clip(x, y, c, 4, 2));
             } catch (Exception e) {
             }
         }
@@ -1260,7 +1302,7 @@ public class Clipping extends javax.swing.JFrame {
                 y6 = Integer.parseInt(yb3.getText());
                 int x[] = {x1, x2, x3, x4, x5, x6};
                 int y[] = {y1, y2, y3, y4, y5, y6};
-                jScrollPane1.setViewportView(new Clip(x, y, 21));
+                jScrollPane1.setViewportView(new Clip(x, y, 2));
             } catch (Exception e) {
             }
         state = 2;
@@ -1284,7 +1326,7 @@ public class Clipping extends javax.swing.JFrame {
                 y6 = Integer.parseInt(height3.getText());//h3
                 int x[] = {x1, x2, x3, x4, x5, x6};
                 int y[] = {y1, y2, y3, y4, y5, y6};
-                jScrollPane1.setViewportView(new Clip(x, y, 22));
+                jScrollPane1.setViewportView(new Clip(x, y, 3));
             } catch (Exception e) {
             }
         state = 3;
@@ -1293,6 +1335,7 @@ public class Clipping extends javax.swing.JFrame {
     private void addTriangleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addTriangleActionPerformed
         // TODO add your handling code here:
         try {
+                
                 x1 = Integer.parseInt(xt_a1.getText());
                 x2 = Integer.parseInt(xt_b1.getText());
                 x3 = Integer.parseInt(xt_c1.getText());
@@ -1311,21 +1354,16 @@ public class Clipping extends javax.swing.JFrame {
                 int y7 = Integer.parseInt(yt_a3.getText());
                 int y8 = Integer.parseInt(yt_b3.getText());
                 int y9 = Integer.parseInt(yt_c3.getText());
+                
                 int x[] = {x1 * grid + wSize, x2 * grid + wSize, x3 * grid + wSize, x4 * grid + wSize, x5 * grid + wSize,
                     x6 * grid + wSize, x7 * grid + wSize, x8 * grid + wSize, x9 * grid + wSize};
                 int y[] = {wSize - grid * y1, wSize - grid * y2, wSize - grid * y3, wSize - grid * y4, wSize - grid * y5,
                     wSize - grid * y6, wSize - grid * y7, wSize - grid * y8, wSize - grid * y9};
-                jScrollPane1.setViewportView(new Clip(x, y, 23));
+                jScrollPane1.setViewportView(new Clip(x, y, 4));
             } catch (Exception e) {
             }
         state = 4;
     }//GEN-LAST:event_addTriangleActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        new TitikBidang().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     /**
@@ -1375,7 +1413,6 @@ public class Clipping extends javax.swing.JFrame {
     private javax.swing.JTextField height1;
     private javax.swing.JTextField height2;
     private javax.swing.JTextField height3;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
