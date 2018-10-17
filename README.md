@@ -1,1 +1,3 @@
-# komgraf
+# Komgraf
+
+Tugas Komputer Grafik
